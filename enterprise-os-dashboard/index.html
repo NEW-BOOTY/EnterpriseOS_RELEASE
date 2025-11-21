@@ -1,0 +1,179 @@
+<!-- Copyright (c) 2025 Devin B. Royal. All Rights Reserved. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise-OS™ God Console</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <!-- TOP SYSTEM BAR -->
+    <nav id="top-bar">
+        <div class="top-left">
+            <div class="logo-title">Enterprise-OS™ <span class="version">v3.0</span></div>
+            <div class="mode-toggles">
+                <button id="mode-safe" class="mode-toggle active" data-mode="safe">SAFE MODE</button>
+                <button id="mode-ops" class="mode-toggle" data-mode="ops">OPS MODE</button>
+                <button id="mode-god" class="mode-toggle" data-mode="god">GOD MODE</button>
+            </div>
+        </div>
+        <div class="top-center">
+            <div class="status-chip" id="status-cicd">CI/CD: <span class="value">INITIALIZING...</span></div>
+            <div class="status-chip" id="status-security">Security: <span class="value">SCANNING...</span></div>
+            <div class="status-chip" id="status-infra">Infra: <span class="value">SYNCING...</span></div>
+            <div class="status-chip compliance-badges">
+                <span>PCI</span><span>HIPAA</span><span>SOX</span><span>FedRAMP</span>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="user-info">
+                CTO: DEVIN B. ROYAL
+            </div>
+            <div class="clock">
+                <span id="time-utc">--:--:--</span> UTC
+                <span id="time-local">--:--:--</span> LOCAL
+            </div>
+            <div class="command-palette">
+                <span>⌘K</span>
+            </div>
+            <div class="qaos-core-status">
+                <span>DUKEªٱ QAOS CORE: ONLINE</span>
+                <div classs="pulsing-ring"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN COCKPIT LAYOUT -->
+    <main id="cockpit">
+        <!-- LEFT PANELS: CI/CD & INFRA -->
+        <aside id="left-panels">
+            <div class="panel" id="ci-panel">
+                <div class="panel-header">CI/CD PIPELINES</div>
+                <div class="panel-content" id="ci-pipeline-list">
+                    <!-- JS will populate this -->
+                </div>
+            </div>
+            <div class="panel" id="infra-panel">
+                <div class="panel-header">INFRA & CONFIG</div>
+                <div class="panel-content">
+                    <div class="infra-section">
+                        <div class="infra-header">Terraform Environments</div>
+                        <div class="tf-env"><span class="env-name">dev</span><span class="status-dot green"></span>NO DRIFT</div>
+                        <div class="tf-env"><span class="env-name">stage</span><span class="status-dot green"></span>NO DRIFT</div>
+                        <div class="tf-env"><span class="env-name">prod</span><span class="status-dot red"></span>DRIFT DETECTED</div>
+                    </div>
+                    <div class="infra-section">
+                        <div class="infra-header">Ansible Runs</div>
+                        <div class="ansible-summary">OK: 120, CHANGED: 8, FAILED: 0</div>
+                    </div>
+                    <div class="infra-section">
+                        <div class="infra-header">Infra Status</div>
+                        <div class="infra-status">GCP: 3 clusters • 9 namespaces</div>
+                        <div class="infra-status">AWS: 8 accounts • 4 regions</div>
+                        <div class="infra-status">Azure: 2 subscriptions • 5 groups</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CENTRAL ORCHESTRATION CORE -->
+        <section id="central-core">
+            <div class="core-graph">
+                <div class="core-node-center" id="node-root">
+                    <div class="hex-inner">
+                        <div>DUKEªٱ</div>
+                        <span>ROOT ORCHESTRATOR</span>
+                    </div>
+                </div>
+                <!-- 8 Nodes will be positioned by JS/CSS -->
+                <div class="core-node" id="node-chimera" data-id="chimera">
+                    <div class="hex-inner">CHIMERA™</div>
+                </div>
+                <div class="core-node" id="node-aegis" data-id="aegis">
+                    <div class="hex-inner">AEGIS™</div>
+                </div>
+                <div class="core-node" id="node-sentry" data-id="sentry">
+                    <div class="hex-inner">SENTRY™</div>
+                </div>
+                <div class="core-node" id="node-veritas" data-id="veritas">
+                    <div class="hex-inner">VERITAS™</div>
+                </div>
+                <div class="core-node" id="node-synergy" data-id="synergy">
+                    <div class="hex-inner">SYNERGY™</div>
+                </div>
+                <div class="core-node" id="node-clarity" data-id="clarity">
+                    <div class="hex-inner">CLARITY™</div>
+                </div>
+                <div class="core-node" id="node-orchard" data-id="orchard">
+                    <div class="hex-inner">ORCHARD™</div>
+                </div>
+                <div class="core-node" id="node-connect" data-id="connect">
+                    <div class="hex-inner">CONNECT™</div>
+                </div>
+            </div>
+            <div id="tooltip" class="tooltip"></div>
+            <div id="chimera-banners" class="chimera-focus">
+                <div class="banner-main">Chimera™: GCP + Kubernetes Internal Developer Platform (IDP)</div>
+                <div class="banner-sub">Governance, SBOM, and policy orchestrated by DUKEªٱ.</div>
+                <div class="banner-cta">
+                    <a href="/chimera/docs">View Chimera Docs</a>
+                    <a href="/chimera/install">Install Chimera CLI</a>
+                    <a href="/chimera/license">Request Enterprise License</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIGHT DETAIL PANEL -->
+        <aside id="right-panel" class="panel">
+            <div class="panel-header" id="detail-header">PROJECT DETAIL</div>
+            <div class="panel-content" id="detail-content">
+                <div id="detail-placeholder">Click a node to view details</div>
+                <!-- JS will populate this template -->
+                <template id="detail-template">
+                    <div class="detail-tags" id="detail-tags"></div>
+                    <div class="detail-section">
+                        <div class="detail-header">Build & Deploy</div>
+                        <div id="detail-build-status"></div>
+                        <div class="make-targets" id="detail-make-targets"></div>
+                        <button class="cta-button" id="detail-pipeline-button">View Pipeline</button>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-header">Security & Compliance</div>
+                        <div id="detail-last-scan"></div>
+                        <a href="#" id="detail-sbom-link">View Latest SBOM (CycloneDX)</a>
+                        <a href="#" id="detail-sarif-link">View SARIF Report</a>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-header">Runtime</div>
+                        <div id="detail-runtime-targets"></div>
+                        <div id="detail-last-deploy"></div>
+                        <div class="health-indicators" id="detail-health"></div>
+                    </div>
+                </template>
+            </div>
+        </aside>
+    </main>
+
+    <!-- BOTTOM STRIP: TERMINAL & EVENT STREAM -->
+    <footer id="bottom-strip">
+        <div class="panel" id="event-stream-panel">
+            <div class="panel-header">EVENT STREAM / TIMELINE</div>
+            <div class="panel-content" id="event-stream">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+        <div class="panel" id="console-panel">
+            <div class="panel-header">COMMAND CONSOLE</div>
+            <div class="panel-content" id="command-console">
+                <div id="console-output"></div>
+                <div class="console-input">
+                    <span class="console-prompt">duke></span>
+                    <input type="text" id="console-input-field" placeholder="make chimera.scan --env=prod">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

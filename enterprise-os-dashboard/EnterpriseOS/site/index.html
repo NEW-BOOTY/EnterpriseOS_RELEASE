@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+   * Copyright © 2025 Devin B. Royal.
+   * All Rights Reserved.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise OS™ — Unified AI-Powered Governance OS</title>
+  <meta name="description" content="Enterprise OS™ is a unified AI-powered governance operating system that integrates Google, Amazon, Microsoft, Oracle, IBM, OpenAI, Apple, and Meta into a single, automated security and compliance layer." />
+  <style>
+    :root {
+      --bg: #05060a;
+      --bg-elevated: #0b0d12;
+      --accent: #4dd0ff;
+      --accent-soft: rgba(77, 208, 255, 0.16);
+      --accent-strong: #00e5ff;
+      --text-main: #f4f5fb;
+      --text-muted: #a3a7c2;
+      --border-subtle: #1b1e2b;
+      --danger: #ff5370;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --transition-fast: 0.18s ease-out;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #151829 0, #020308 55%);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 64px;
+    }
+
+    header {
+      width: 100%;
+      max-width: var(--max-width);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      gap: 16px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 20% 0, #00e5ff 0, #2962ff 40%, #000 90%);
+      box-shadow: 0 0 32px rgba(0, 229, 255, 0.55);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      inset: 20%;
+      border-radius: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.35);
+      box-shadow: inset 0 0 22px rgba(0, 0, 0, 0.9);
+    }
+
+    .logo-text {
+      font-weight: 650;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    nav a {
+      opacity: 0.9;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(77, 208, 255, 0.4);
+      background: radial-gradient(circle at top left, rgba(77, 208, 255, 0.18), transparent 70%);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      color: var(--text-muted);
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #00e676;
+      box-shadow: 0 0 10px rgba(0, 230, 118, 0.9);
+    }
+
+    main {
+      width: 100%;
+      max-width: var(--max-width);
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 880px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .hero {
+      padding: 28px 24px 26px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(145deg, rgba(7, 9, 16, 0.98), rgba(4, 7, 18, 0.98));
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0 0, rgba(77, 208, 255, 0.18), transparent 55%),
+        radial-gradient(circle at 120% 30%, rgba(129, 199, 132, 0.12), transparent 60%);
+      opacity: 0.75;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(2.15rem, 3vw, 2.6rem);
+      line-height: 1.05;
+      margin: 10px 0 12px;
+      letter-spacing: 0.01em;
+    }
+
+    h1 span.accent {
+      background: linear-gradient(120deg, #4dd0ff, #00e5ff, #82b1ff);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 750;
+    }
+
+    .hero-subtitle {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      max-width: 34rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .hero-metadata {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .chip {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(7, 10, 19, 0.8);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .btn-primary {
+      border-radius: var(--radius-pill);
+      border: none;
+      padding: 11px 18px;
+      background: linear-gradient(135deg, #00e5ff, #4dd0ff);
+      color: #020308;
+      font-weight: 650;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      box-shadow: 0 14px 28px rgba(0, 229, 255, 0.35);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+        filter var(--transition-fast);
+    }
+
+    .btn-primary span.icon {
+      font-size: 1.1rem;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 38px rgba(0, 229, 255, 0.45);
+      filter: brightness(1.08);
+    }
+
+    .btn-ghost {
+      border-radius: var(--radius-pill);
+      padding: 11px 16px;
+      border: 1px solid rgba(77, 208, 255, 0.45);
+      background: rgba(8, 10, 18, 0.8);
+      backdrop-filter: blur(18px);
+      color: var(--text-main);
+      font-size: 0.86rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
+      transition: background var(--transition-fast), border-color var(--transition-fast),
+        transform var(--transition-fast);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(13, 18, 32, 0.95);
+      border-color: var(--accent-strong);
+      transform: translateY(-1px);
+    }
+
+    .hero-footnote {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .grid-right {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      background: rgba(7, 9, 16, 0.96);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+      padding: 18px 18px 16px;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .pill {
+      font-size: 0.7rem;
+      padding: 4px 9px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-muted);
+    }
+
+    .pill.hot {
+      border-color: rgba(255, 83, 112, 0.65);
+      color: #ff8a9b;
+    }
+
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 4px 0;
+    }
+
+    .list li::before {
+      content: "•";
+      color: var(--accent);
+      margin-top: 1px;
+      font-size: 0.9rem;
+    }
+
+    .stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .stat {
+      flex: 1 1 120px;
+      border-radius: 14px;
+      background: radial-gradient(circle at top, rgba(77, 208, 255, 0.16), rgba(7, 9, 16, 0.9));
+      border: 1px solid rgba(104, 109, 150, 0.7);
+      padding: 8px 10px;
+      font-size: 0.8rem;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      margin-bottom: 3px;
+    }
+
+    .stat-value {
+      font-weight: 600;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .small-pill {
+      font-size: 0.7rem;
+      padding: 3px 9px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+      background: rgba(4, 7, 14, 0.95);
+    }
+
+    footer {
+      width: 100%;
+      max-width: var(--max-width);
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(23, 26, 40, 0.95);
+      padding-top: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.78rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .tagline {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo-wrap">
+        <div class="logo-mark"></div>
+        <div>
+          <div class="logo-text">Enterprise OS™</div>
+          <div style="font-size:0.72rem; color:var(--text-muted); margin-top:2px;">
+            Unified AI-Powered Governance Operating System
+          </div>
+        </div>
+      </div>
+      <nav>
+        <span class="badge">
+          <span class="badge-dot"></span>
+          Live POC • Multi-Cloud • Multi-LLM
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Left: Hero -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Built by Devin B. Royal • CTO
+          </div>
+
+          <h1>
+            One OS for <span class="accent">All Governance.</span><br />
+            One Pane for <span class="accent">Every Cloud.</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <strong>Enterprise OS™</strong> unifies Google, Amazon, Microsoft, Oracle, IBM,
+            OpenAI, Apple, and Meta into a single, AI-powered governance operating system.
+            Real audits. Real AI. Real-time risk visibility.
+          </div>
+
+          <div class="hero-metadata">
+            <div class="chip">Multi-cloud: AWS • GCP • Azure • OCI • IBM • Apple • Meta</div>
+            <div class="chip">Multi-LLM: GPT-4 • Gemini • Grok • Meta LLM</div>
+          </div>
+
+          <div class="cta-row">
+            <button class="btn-primary" onclick="window.location.href='#contact'">
+              <span class="icon">⚡</span>
+              Request Enterprise Demo
+            </button>
+            <button class="btn-ghost" onclick="window.location.href='#details'">
+              View Architecture &amp; Value
+            </button>
+          </div>
+
+          <div class="hero-footnote">
+            Ideal for Fortune 100 enterprises, government agencies, hyperscalers, and
+            cybersecurity vendors seeking a unified governance OS.
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Capability cards -->
+      <aside class="grid-right">
+        <div class="card" id="details">
+          <div class="card-header">
+            <div class="card-title">What Enterprise OS™ Delivers</div>
+            <span class="pill hot">Unified • AI-Powered • On-Device</span>
+          </div>
+          <ul class="list">
+            <li>Real SBOM/MBOM/CIS/NIST audits and compliance checks.</li>
+            <li>Multi-cloud scanning across AWS, GCP, Azure, OCI, IBM, Apple, and Meta.</li>
+            <li>Secrets detection and risk scoring with Syft, Trivy, Gitleaks and cloud CLIs.</li>
+            <li>Parallel LLM execution: OpenAI, Gemini, Grok, and Meta LLM.</li>
+            <li>Built-in React + FastAPI GUI dashboard with live logs and events.</li>
+            <li>Job-runner engine, plugin marketplace, and documentation generator.</li>
+          </ul>
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-label">Target License</div>
+              <div class="stat-value">$2.2M – $7M / yr</div>
+              <div class="tagline">Enterprise deployments</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Gov / OEM</div>
+              <div class="stat-value">$10M – $50M+</div>
+              <div class="tagline">Federal &amp; OEM editions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Who It’s For</div>
+            <span class="pill">CISOs • CTOs • Cloud Leads</span>
+          </div>
+          <ul class="list">
+            <li>Fortune 100 and global enterprises.</li>
+            <li>Government and defense agencies.</li>
+            <li>Cloud hyperscalers and AI security teams.</li>
+            <li>Cybersecurity and observability vendors.</li>
+          </ul>
+          <div class="pill-row">
+            <span class="small-pill">SOC 2</span>
+            <span class="small-pill">HIPAA</span>
+            <span class="small-pill">FedRAMP</span>
+            <span class="small-pill">NIST 800-53</span>
+            <span class="small-pill">CIS Benchmarks</span>
+          </div>
+        </div>
+
+        <div class="card" id="contact">
+          <div class="card-header">
+            <div class="card-title">Contact &amp; Partnerships</div>
+            <span class="pill">Direct with Architect</span>
+          </div>
+          <ul class="list">
+            <li><strong>Founder &amp; Architect:</strong> Devin B. Royal</li>
+            <li><strong>Website:</strong> <a href="https://java1kind.org" target="_blank" rel="noopener">java1kind.org</a></li>
+            <li><strong>Email:</strong> <a href="mailto:Devin-royal@programmer.net">Devin-royal@programmer.net</a></li>
+            <li><strong>Phone:</strong> (650) 664-0543</li>
+          </ul>
+          <div class="tagline" style="margin-top:6px;">
+            Seeking licensing partners, OEM deals, strategic investors, and acquisition
+            conversations for Enterprise OS™.
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="tagline">
+        © 2025 Devin B. Royal. All Rights Reserved. Enterprise OS™ • Java 1 KIND.
+      </div>
+      <div class="footer-links">
+        <a href="#details">Architecture</a>
+        <a href="#contact">Partnerships</a>
+        <a href="Enterprise_OS_Marketing_Bundle.pdf">Download Marketing Bundle (PDF)</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

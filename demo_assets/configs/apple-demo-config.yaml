@@ -1,0 +1,7 @@
+provider: apple
+environment: demo
+region: us-demo-1
+features:
+  - synergy
+  - baseline
+  - logging

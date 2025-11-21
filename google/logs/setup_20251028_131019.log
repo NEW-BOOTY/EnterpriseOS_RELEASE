@@ -1,0 +1,43 @@
+gdate: invalid argument ‘secondsecondseconds’ for ‘--iso-8601’
+Valid arguments are:
+  - ‘hours’
+  - ‘minutes’
+  - ‘date’
+  - ‘seconds’
+  - ‘ns’
+Try 'gdate --help' for more information.
+[INFO] Starting setup for google at 
+==> Updating Homebrew...
+Already up-to-date.
+[OK] git present
+[OK] jq present
+[OK] yq present
+[INFO] Installing gnu-sed via brew...
+Warning: gnu-sed 4.9 is already installed and up-to-date.
+To reinstall 4.9, run:
+  brew reinstall gnu-sed
+[INFO] Installing coreutils via brew...
+Warning: coreutils 9.8 is already installed and up-to-date.
+To reinstall 9.8, run:
+  brew reinstall coreutils
+[OK] go present
+[INFO] Installing python@3.11 via brew...
+Warning: python@3.11 3.11.14_1 is already installed and up-to-date.
+To reinstall 3.11.14_1, run:
+  brew reinstall python@3.11
+[OK] bazelisk present
+[OK] kubectl present
+[INFO] Installing google-cloud-sdk via brew...
+Warning: Not upgrading gcloud-cli, the latest version is already installed
+[INFO] Generating polyglot outputs (src/)...
+[INFO] Validating environment...
+[INFO] Completed bootstrap for google.
+gdate: invalid argument ‘secondsecondseconds’ for ‘--iso-8601’
+Valid arguments are:
+  - ‘hours’
+  - ‘minutes’
+  - ‘date’
+  - ‘seconds’
+  - ‘ns’
+Try 'gdate --help' for more information.
+[INFO] setup.sh finished at [ERROR] setup.sh failed at line 19

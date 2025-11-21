@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openai-automation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: openai-automation
+  template:
+    metadata:
+      labels:
+        app: openai-automation
+    spec:
+      containers:
+      - name: openai-automation
+        image: cutthecheck/enterprise_automation:openai
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: openai-service
+spec:
+  selector:
+    app: openai-automation
+  ports:
+    - port: 80
+      targetPort: 8080

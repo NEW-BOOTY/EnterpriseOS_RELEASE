@@ -1,0 +1,13 @@
+[Unit]
+Description=Automation Framework Service
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/bash -lc '/opt/automation/setup.sh --service'
+Restart=on-failure
+WorkingDirectory=/opt/automation
+User=automation
+
+[Install]
+WantedBy=multi-user.target

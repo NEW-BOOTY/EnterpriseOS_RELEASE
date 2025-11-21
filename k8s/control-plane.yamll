@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: control-plane
+  namespace: enterprise-os-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: control-plane
+  template:
+    metadata:
+      labels:
+        app: control-plane
+    spec:
+      containers:
+        - name: control-plane
+          image: enterprise-os/control-plane:0.1.0-demo
+          env:
+            - name: ENTERPRISE_OS_ENVIRONMENT
+              value: "k8s-demo"
+            - name: ENTERPRISE_OS_PORT
+              value: "8080"
+            - name: MINIO_ENDPOINT
+              value: "minio.enterprise-os-demo.svc.cluster.local:9000"
+            - name: MINIO_SECURE
+              value: "false"
+          envFrom:
+            - secretRef:
+                name: minio-creds
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 20
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 15
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: control-plane
+  namespace: enterprise-os-demo
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: control-plane

@@ -1,0 +1,4 @@
+- pattern: "ssn"
+  action: block
+  reason: PII
+- rate_limit: 10 per minute

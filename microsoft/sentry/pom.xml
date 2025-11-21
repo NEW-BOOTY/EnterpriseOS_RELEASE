@@ -1,0 +1,11 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.devinroyal</groupId>
+  <artifactId>sentry</artifactId>
+  <version>1.0.0</version>
+  <properties><maven.compiler.source>17</maven.compiler.source><maven.compiler.target>17</maven.compiler.target></properties>
+  <dependencies>
+    <dependency><groupId>software.amazon.awssdk</groupId><artifactId>s3</artifactId><version>2.21.0</version></dependency>
+    <dependency><groupId>software.amazon.awssdk</groupId><artifactId>kms</artifactId><version>2.21.0</version></dependency>
+  </dependencies>
+</project>

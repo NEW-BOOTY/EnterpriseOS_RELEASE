@@ -1,0 +1,1 @@
+SELECT 'HELLO ORACLE' AS greeting FROM dual;

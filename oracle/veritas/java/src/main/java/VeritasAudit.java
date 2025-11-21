@@ -1,0 +1,1 @@
+import java.sql.*; public class VeritasAudit { public static void main(String[] a) throws Exception { Connection c = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "audit_user", "pass"); c.createStatement().execute("SELECT 1 FROM DUAL"); } }

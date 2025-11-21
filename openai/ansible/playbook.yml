@@ -1,0 +1,9 @@
+---
+- name: Provision host
+  hosts: all
+  become: true
+  tasks:
+    - name: Ensure base packages
+      package:
+        name: ['git']
+        state: present

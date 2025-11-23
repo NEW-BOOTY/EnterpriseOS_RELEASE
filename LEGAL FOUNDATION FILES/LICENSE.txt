@@ -1,0 +1,59 @@
+Enterprise-OS™ — Commercial Software License Agreement
+Version 1.0 — © 2025 DEVIN BENARD ROYAL. All Rights Reserved.
+1. Grant of License
+This Software (“Enterprise-OS™”) is licensed, not sold. By installing, accessing, executing, or using Enterprise-OS™, You (“Licensee”) are granted a limited, non-exclusive, non-transferable, revocable license to use the Software strictly in accordance with this Agreement.
+2. Ownership
+Enterprise-OS™, its code, architecture, automation, documentation, frameworks, deployment scripts, and all intellectual property—including derivative components—are solely owned by:
+DEVIN BENARD ROYAL
+All worldwide rights reserved.
+3. Restrictions
+Licensee shall NOT, under any circumstances:
+Modify, copy, distribute, or redistribute the Software
+Reverse engineer, decompile, or disassemble
+Sell, rent, sublicense, or lease
+Use for commercial purposes without a signed commercial license
+Host, publish, or expose to third parties
+Use for competing product development
+Disclose performance benchmarks without permission
+Violation results in immediate and automatic termination.
+4. Commercial Use
+Commercial use requires a signed Enterprise License Agreement (ELA) with:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+Without this agreement, ALL commercial use is prohibited.
+5. Source Code Access
+If source code access is granted under a separate contract:
+Licensee must treat the code as confidential
+No derivative works may be created
+No disclosure, distribution, or publication
+No training of machine learning models on the code
+All copies must be deleted upon termination
+6. Termination
+This License terminates automatically if:
+Licensee breaches any term
+Unauthorized copying or commercial use occurs
+Reverse engineering is attempted
+Upon termination, Licensee must immediately uninstall and destroy all copies.
+7. Warranty Disclaimer
+Enterprise-OS™ is provided AS IS, with no warranties—express or implied.
+No guarantee of fitness, merchantability, uptime, correctness, or error-free operation is provided.
+8. Limitation of Liability
+Licensor shall not be liable for:
+Business interruption
+Loss of data
+Lost profits
+Indirect or consequential damages
+Aggregate liability shall not exceed the amount paid for the license.
+9. Governing Law
+This Agreement is governed by the laws of the State of Texas.
+Jurisdiction and venue lie exclusively in Denton County, Texas, USA.
+10. Entire Agreement
+This document constitutes the full and exclusive agreement regarding Enterprise-OS™.
+11. Contact Information
+For licensing, OEM collaborations, government use, or enterprise acquisition:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+© 2025 DEVIN BENARD ROYAL. ALL RIGHTS RESERVED.
+Unauthorized use is strictly prohibited.

@@ -1,0 +1,115 @@
+END-USER LICENSE AGREEMENT
+Enterprise-OS™
+Version 1.0 — © 2025 DEVIN BENARD ROYAL. All Rights Reserved.
+IMPORTANT — READ CAREFULLY
+This End-User License Agreement (“Agreement” or “EULA”) is a legal contract between:
+Licensor:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+and
+You (“Licensee”), the individual or entity installing, accessing, or using Enterprise-OS™.
+By installing, copying, accessing, or using Enterprise-OS™, YOU AGREE TO BE BOUND BY THIS AGREEMENT.
+If You do NOT agree, do NOT install or use the Software.
+1. DEFINITIONS
+“Software” refers to Enterprise-OS™, including
+binaries
+compiled artifacts
+scripts
+automation frameworks
+documentation
+configurations
+APIs
+tools
+architecture
+and any updates or components provided by Licensor.
+“Commercial Use” means any use for business, enterprise, corporate, organizational, revenue-generating, or operational purposes.
+“Licensee” means the end user who installs or uses the Software.
+2. LICENSE GRANT
+Licensor grants Licensee a revocable, non-transferable, non-exclusive, limited license to install and use the Software solely for:
+personal use
+evaluation
+non-commercial experimentation
+No other rights are granted.
+All rights not expressly granted are reserved.
+3. RESTRICTIONS
+Licensee shall NOT:
+Use the Software for any commercial, enterprise, organizational, professional, or for-profit purpose.
+Modify, adapt, translate, patch, or create derivative works.
+Reverse engineer, decompile, or attempt to derive source code.
+Reproduce, distribute, or publish the Software.
+Sell, rent, lease, lend, sublicense, or host the Software.
+Share access or allow third parties to use the Software.
+Use the Software to develop competing products or services.
+Publish performance benchmarks or test results without written approval.
+These restrictions are strictly enforced.
+4. COMMERCIAL USE PROHIBITED
+Licensee may NOT use the Software for any commercial purpose unless they first obtain a separate signed Commercial License Agreement (ELA) from:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+Commercial use without a signed ELA is software piracy and constitutes material breach.
+5. INTELLECTUAL PROPERTY RIGHTS
+Enterprise-OS™ and its components are the exclusive property of DEVIN BENARD ROYAL.
+Licensee acknowledges that:
+The Software is protected by copyright, trade secret, and IP laws
+The Software is licensed, not sold
+Title and ownership remain with Licensor
+No IP rights transfer under this Agreement
+All rights are reserved worldwide.
+6. CONFIDENTIALITY
+If Licensee receives any private documentation, source materials, architectural data, deployment procedures, or uncompiled forms of the Software, Licensee agrees to treat all such materials as Confidential Information.
+Licensee shall not disclose, share, publish, or expose confidential materials to any third party.
+7. TERMINATION
+This Agreement automatically terminates if Licensee:
+breaches any term of this Agreement
+uses the Software commercially without permission
+attempts reverse engineering
+copies or redistributes the Software
+exposes the Software publicly
+Upon termination, Licensee must:
+stop using the Software immediately
+delete all installations and copies
+destroy all related data and documentation
+No refunds will be issued.
+8. NO WARRANTY
+The Software is provided AS IS with NO WARRANTY of any kind, whether express, implied, or statutory.
+This includes, without limitation:
+merchantability
+fitness for a particular purpose
+reliability
+accuracy
+performance
+security
+error-free operation
+Licensee assumes all risks.
+9. LIMITATION OF LIABILITY
+To the maximum extent allowed by law:
+Licensor shall NOT be liable for any damages, including:
+direct
+indirect
+incidental
+special
+consequential
+punitive
+loss of revenue
+loss of profits
+loss of data
+business interruption
+Licensor’s total liability shall not exceed the license fees paid by Licensee (if any).
+10. GOVERNING LAW
+This Agreement shall be governed by:
+The laws of the State of Texas, USA.
+Venue and jurisdiction are exclusively in:
+Denton County, Texas, USA.
+11. EXPORT COMPLIANCE
+Licensee agrees to comply with:
+U.S. export regulations
+International technology transfer laws
+Restrictions imposed on encryption, cybersecurity, or governmental technologies
+The Software may not be exported to embargoed countries or restricted entities.
+12. ENTIRE AGREEMENT
+This EULA constitutes the entire agreement between Licensor and Licensee concerning Enterprise-OS™.
+No verbal statements, emails, or external documents modify this Agreement unless signed by both parties.
+© 2025 DEVIN BENARD ROYAL. ALL RIGHTS RESERVED.
+Unauthorized use strictly prohibited.

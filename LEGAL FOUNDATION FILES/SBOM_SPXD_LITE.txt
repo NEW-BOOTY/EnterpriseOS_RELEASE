@@ -1,0 +1,77 @@
+Enterprise-OS™ Software Bill of Materials (SBOM)
+SPDX-Lite Compliant
+Version 1.0 — © 2025 DEVIN BENARD ROYAL. All Rights Reserved.
+SPDX Version
+SPDX-2.2
+Document Name
+Enterprise-OS_SBOM_SPXD_Lite
+SPDX Identifier
+SPDXRef-DOCUMENT
+Document Namespace
+https://enterprise-os.devroyal/sbom/2025/enterprise-os-spdx-lite
+Creator
+Person: DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+Tool: Enterprise-OS SBOM Generator v1.0
+Created
+2025-01-01T00:00:00Z (you may update this as needed)
+Package Information
+Package Name: Enterprise-OS
+SPDXID: SPDXRef-Package-EnterpriseOS
+Package Version: 1.0.0
+Package FileName: EnterpriseOS_CLEAN_RELEASE.zip
+Package Supplier: Person: DEVIN BENARD ROYAL
+Package Download Location: NOASSERTION (private commercial distribution)
+Package Verification Code: UNKNOWN (not required for proprietary releases)
+Package Summary:
+Enterprise-OS™ is a fully proprietary, commercial operating framework engineered for enterprise automation, orchestration, security, compliance, and multi-platform deployment.
+Package Copyright
+© 2025 DEVIN BENARD ROYAL. All Rights Reserved.
+Declared License
+LicenseRef-EnterpriseOS-Commercial
+(The commercial license defined in LICENSE.txt applies.)
+Package License Comments
+Enterprise-OS™ is licensed exclusively under a custom Fully Commercial, Closed-Source License and is not eligible for open-source classification or redistribution.
+SBOM Software Components Section
+Enterprise-OS™ contains:
+0 Open-Source Components
+0 Third-Party Modules
+0 Embedded Libraries
+0 External Dependencies
+This greatly reduces:
+Supply-chain attack surface
+Licensing conflicts
+Compliance risk
+Vulnerability exposure
+Legal overhead
+File and Artifact Summary
+Component	SPDX ID	License	Copyright Holder
+Enterprise-OS Core Scripts	SPDXRef-CoreScripts	LicenseRef-EnterpriseOS-Commercial	© 2025 DEVIN BENARD ROYAL
+Automation Modules	SPDXRef-Automation	LicenseRef-EnterpriseOS-Commercial	© 2025 DEVIN BENARD ROYAL
+Deployment Tools	SPDXRef-DeployTools	LicenseRef-EnterpriseOS-Commercial	© 2025 DEVIN BENARD ROYAL
+Security Components	SPDXRef-Security	LicenseRef-EnterpriseOS-Commercial	© 2025 DEVIN BENARD ROYAL
+Documentation	SPDXRef-Docs	LicenseRef-EnterpriseOS-Commercial	© 2025 DEVIN BENARD ROYAL
+Configuration Files	SPDXRef-Config	LicenseRef-EnterpriseOS-Commercial	© 2025 DEVIN BENARD ROYAL
+All components are owned fully and exclusively by the Licensor.
+Relationships Section
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-EnterpriseOS
+Relationship: SPDXRef-Package-EnterpriseOS CONTAINS SPDXRef-CoreScripts
+Relationship: SPDXRef-Package-EnterpriseOS CONTAINS SPDXRef-Automation
+Relationship: SPDXRef-Package-EnterpriseOS CONTAINS SPDXRef-DeployTools
+Relationship: SPDXRef-Package-EnterpriseOS CONTAINS SPDXRef-Security
+Relationship: SPDXRef-Package-EnterpriseOS CONTAINS SPDXRef-Docs
+Relationship: SPDXRef-Package-EnterpriseOS CONTAINS SPDXRef-Config
+Security Statement
+Enterprise-OS™ contains no open-source components, therefore:
+No CVE inheritance
+No CVSS exposure from third-party libraries
+No GPL/LGPL/AGPL restrictions
+No OSS compatibility risk
+No supply-chain vulnerabilities
+This makes Enterprise-OS™ a high-trust, low-liability commercial product ideally suited for enterprise and government environments.
+Contact for SBOM or Compliance Requests
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+© 2025 DEVIN BENARD ROYAL. ALL RIGHTS RESERVED.

@@ -1,0 +1,66 @@
+Third-Party & Open-Source Disclosures
+Enterprise-OS™
+© 2025 DEVIN BENARD ROYAL. All Rights Reserved.
+1. Statement of Independence
+Enterprise-OS™ is an independently engineered, closed-source, proprietary software system created exclusively by:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+Unless explicitly stated in this document, Enterprise-OS™ does not include or rely on any third-party open-source libraries, licensed frameworks, or external code components.
+2. No Embedded Open-Source Libraries
+At the time of this release, Enterprise-OS™:
+Does NOT contain GPL, LGPL, AGPL, MPL, Apache, MIT, BSD, or other open-source licensed code.
+Does NOT integrate, statically or dynamically, any open-source binaries, scripts, frameworks, or compiled artifacts.
+Does NOT incorporate third-party source code, snippets, or derivative works.
+This ensures:
+Zero copyleft obligations
+Zero redistribution requirements
+Zero viral licensing risk
+Zero supply-chain/licensing conflicts
+3. Allowed External Tools (Runtime Only, Not Distributed)
+Enterprise-OS™ may interact with, but does NOT include, the following standard runtime dependencies commonly present on modern systems:
+These tools are not bundled, not redistributed, and therefore carry no licensing impact:
+Standard POSIX shell tools (sh, bash, zsh, sed, awk, grep, etc.)
+Linux/macOS standard utilities
+Systemd or launchd (if present on user’s OS)
+User-installed tools such as Docker, Git, jq, etc.
+Java Runtime Environment (if the user installs it)
+Kubernetes (if the user installs it)
+These tools remain governed by their own separate licenses, and Enterprise-OS™ does not distribute or modify them.
+4. No Included APIs or Third-Party Cloud Services
+Enterprise-OS™ does not embed, package, or redistribute APIs or SDKs from:
+Amazon Web Services (AWS)
+Google Cloud Platform (GCP)
+Microsoft Azure
+Oracle Cloud
+IBM
+Meta
+OpenAI
+Apple
+Any integration is external and requires the Licensee to bring their own credentials and SDKs.
+Enterprise-OS™ carries zero legal responsibility for Licensee’s use of those services.
+5. Third-Party Software Provided by the User
+If Licensee chooses to integrate third-party software with Enterprise-OS™, Licensee:
+Assumes full responsibility for legal compliance
+Must obey the licensing terms of those tools
+Must ensure no open-source obligations contaminate the system
+This includes any optional dependencies, plugins, libraries, or SDKs the Licensee adds.
+6. No Warranty of Third-Party Compliance
+Enterprise-OS™ makes no warranties regarding:
+Compatibility with third-party tools
+User-supplied open-source components
+Compliance of user-added components
+The Licensee assumes all responsibility for evaluating external integrations.
+7. Modification Disclaimer
+If any Licensee modifies Enterprise-OS™, the Licensee:
+Becomes legally responsible for all open-source obligations
+Must ensure compliance with all third-party licenses
+Must not distribute modified versions without permission
+Any modification voids warranties and violates the EULA unless explicitly authorized.
+8. Contact for Licensing or Questions
+For clarification or licensing inquiries:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+© 2025 DEVIN BENARD ROYAL. All Rights Reserved.
+This document must remain bundled with all distributed copies of Enterprise-OS™.

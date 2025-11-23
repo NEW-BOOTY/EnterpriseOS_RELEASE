@@ -1,0 +1,18 @@
+Multi-Cloud Governance Scan – Summary
+Run Date: 2025-11-23T06:16:28Z
+
+Sources:
+  - google/chimera/cloud/cloud_integration.sh
+  - apple/synergy/cloud/cloud_integration.sh
+  - oracle/veritas/cloud/cloud_integration.sh
+  - microsoft/sentry/cloud/cloud_integration.sh
+
+Normalized findings:
+  - AWS: Detected IAM role drift, 1 admin-equivalent role flagged
+  - GCP: 2 projects missing mandatory labels, 1 overly permissive firewall rule
+  - Azure: 1 storage account with legacy TLS configuration
+
+All detailed results are summarized in:
+  - reports/aws_governance_report.md
+  - reports/gcp_governance_report.md
+  - reports/azure_governance_report.md

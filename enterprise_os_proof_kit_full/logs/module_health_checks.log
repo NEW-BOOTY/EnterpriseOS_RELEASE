@@ -1,0 +1,19 @@
+Enterprise-OS Module Health Check Summary
+Run Date: 2025-11-23T06:16:28Z
+
+Checked modules (enterprise_os_root/modules/):
+
+  - AppleSynergy       : health_check.txt => OK, last integration succeeded
+  - AzureWeave         : health_check.txt => OK, control-plane compiled
+  - HackPulse          : health_check.txt => OK, model + agent present
+  - IBMSynergy         : health_check.txt => OK, Maven build log clean
+  - Lambdaloom         : health_check.txt => OK, Rust target built
+  - OpenAIClarity      : health_check.txt => OK
+  - Sentry             : health_check.txt => OK, Java client compiled
+  - Synergy            : health_check.txt => OK
+  - Veritas            : health_check.txt => OK
+  - WatsonWeft         : health_check.txt => OK
+
+Conclusion:
+  All core Enterprise-OS™ modules are present with successful last-known builds
+  and pass basic health signalling checks.

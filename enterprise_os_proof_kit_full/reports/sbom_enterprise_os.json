@@ -1,0 +1,58 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-11-23T06:16:28Z",
+    "tools": [
+      {
+        "vendor": "Enterprise-OS",
+        "name": "enterprise-os-sbom-generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "enterprise-os-root",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "name": "enterprise-os-root",
+      "version": "1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Proprietary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "Enterprise-OS-COGNITIVE-v9",
+      "version": "1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Proprietary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "OpenJDK",
+      "version": "21.x",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only WITH Classpath-exception-2.0"
+          }
+        }
+      ]
+    }
+  ]
+}

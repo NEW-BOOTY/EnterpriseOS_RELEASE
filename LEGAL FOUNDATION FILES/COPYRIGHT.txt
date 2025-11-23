@@ -1,0 +1,68 @@
+Enterprise-OS™
+Copyright © 2025 DEVIN BENARD ROYAL
+All Rights Reserved.
+1. COPYRIGHT OWNERSHIP
+All components of Enterprise-OS™ — including but not limited to source code, binaries, scripts, frameworks, APIs, deployment tools, automation systems, configuration files, architecture, documentation, and all derivative materials — are the exclusive intellectual property of:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+All rights worldwide are reserved.
+2. SCOPE OF PROTECTION
+This copyright covers:
+All original code
+All automation frameworks
+Bash, Python, Java, Go, or other scripts included in the Software
+All design patterns, architecture, and system logic
+Build systems, deployment systems, and meta-builders
+Documentation, diagrams, guides, and manuals
+Compiled artifacts, binaries, executables, WASM modules
+Cryptographic logic
+Security frameworks
+Configurations and templates
+Future updates, patches, enhancements, or modifications
+Enterprise-OS™ is protected under:
+U.S. Copyright Law
+International Copyright Treaties
+Trade Secret Laws
+Intellectual Property Treaties
+DMCA §1201 (anti-circumvention)
+3. RIGHTS RESERVED
+Without a signed Commercial License Agreement with DEVIN BENARD ROYAL, no individual or organization may:
+Copy or redistribute the Software
+Modify or create derivative works
+Reverse engineer or decompile
+Sell or offer as part of a paid service
+Host, publish, or make available to third parties
+Use in production environments
+Use for enterprise, business, or organizational purposes
+Use for development of competing technologies
+4. PROHIBITED USES
+The following actions strictly violate this copyright:
+Publishing the Software or any portion online
+Forking or cloning private repositories
+Training machine learning or AI models on the code
+Using any architecture or code to develop similar systems
+Integrating the Software into commercial products without permission
+Selling or sublicensing any part of the Software
+Distributing compiled binaries or source code to third parties
+Violations are subject to legal action, damages, and injunctive relief.
+5. COMMERCIAL LICENSING
+Commercial use, OEM partnerships, enterprise deployment, government/defense integration, and reseller distribution require a paid commercial license signed directly with:
+DEVIN BENARD ROYAL
+Email: DEVIN-ROYAL@PROGRAMMER.NET
+Phone: (650) 360-7400 or (650) 664-0543
+Unauthorized commercial use constitutes software piracy and copyright infringement.
+6. TRADEMARK NOTICE
+Enterprise-OS™ and related marks may be trademarked or pending trademark registration.
+All branding rights belong solely to DEVIN BENARD ROYAL.
+7. NO IMPLIED RIGHTS
+Nothing in the distribution of the Software grants or implies:
+transfer of ownership
+sale of intellectual property
+permission to redistribute
+license to modify
+rights to viewing proprietary logic
+open-source privileges
+All rights remain with the copyright owner.
+© 2025 DEVIN BENARD ROYAL. ALL RIGHTS RESERVED.
+Unauthorized use, duplication, disclosure, or distribution is strictly prohibited.
